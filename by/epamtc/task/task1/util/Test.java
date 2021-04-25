@@ -1,13 +1,11 @@
 package by.epamtc.task.task1.util;
 
-import java.util.Arrays;
-
 public class Test {
     public static void test(StringBuilder stringBuilder, char[] chars, String string) {
 
-        stringBuilder = StringCorrection.putSymbol(stringBuilder, 2, '@');
-        CharCorrection.putSymbol(chars, 2, '@');
-        string = RegularCorrection.putSymbol(string, 2, '@');
+        stringBuilder = StringCorrection.putSymbol(stringBuilder, 1, '@');
+        CharCorrection.putSymbol(chars, 2, '#');
+        string = RegularCorrection.putSymbol(string, 3, '@');
 
         System.out.println("String: " + stringBuilder);
         System.out.println("Array of chars: " + printChars(chars));
